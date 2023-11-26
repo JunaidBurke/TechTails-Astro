@@ -1,0 +1,38 @@
+---
+import { Image } from "astro:assets";
+
+import logo from "../assets/aihorizons.png";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout seo={{ title: "About" }}>
+  <div class='flex flex-col items-center gap-8 mx-auto mt-12'>
+    <Image
+      src={logo}
+      alt='Logo of TechTales by Junaid'
+      width={512}
+      quality='max'
+      class='w-64 rounded-full'
+    />
+    <p class='mt-2 flex-1 leading-7'>
+      Welcome to TechTales by Junaid, a digital haven where technology, creativity,
+      and learning converge. I'm <b>Junaid Burke</b>, a software developer and
+      tech enthusiast based in New Jersey, weaving the intricate threads of
+      Java, JavaScript, TypeScript, React, HTML, and CSS into the vast tapestry
+      of the tech world. Here, you'll find a diverse array of topics that mirror
+      my passions and professional journey. From the latest developments in AI
+      that are reshaping our future, to the elegant complexities of algorithms,
+      data structures, and design patterns – this blog is a reflection of my
+      ongoing quest for knowledge and excellence in the field of technology. But
+      it's not all code and algorithms! As a lover of photography and an avid
+      reader, I often step into the realms of visual storytelling and the
+      immersive world of books, sharing insights, reviews, and musings on
+      everything from non-fiction gems to fictional escapades and
+      self-improvement journeys. Whether you're here to explore the nuances of
+      software development, to get a glimpse of the latest in tech, or simply to
+      share in the joy of learning and creativity, I'm thrilled to have you on
+      this journey with me. So, dive in, explore, and let's embark on this
+      adventure of discovery and innovation together!
+    </p>
+  </div>
+</Layout>
