@@ -19,6 +19,8 @@ export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
 // and we can't cast an `unknown` to the `Page` type.
 // To fix this, we need to define `type Props` and set the page type in it,
 // instead of casting the `page` constant to it.
+
+// This is the same as `const page: Page<CollectionEntry<'blog'>> = Astro.props.page;`
 type Props = {
   page: Page<CollectionEntry<'blog'>>;
 };
