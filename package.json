@@ -27,6 +27,7 @@
     "typescript": "^5.2.2"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.11",
     "@types/markdown-it": "^13.0.7",
     "@types/sanitize-html": "^2.9.5"
   }
