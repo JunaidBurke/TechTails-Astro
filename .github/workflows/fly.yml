@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo using git
+      - name: Checkout repo using Git
         uses: actions/checkout@v3
 
       - name: Setup node 18
@@ -21,8 +21,8 @@ jobs:
           node-version: 18
           cache: 'npm'
 
-      - name: Install flyctl
-        run: curl -L https://fly.io/install.sh | sh
+      # - name: Install flyctl
+      #   run: curl -L https://fly.io/install.sh | sh
 
       - name: Setup flyctl
         uses: superfly/flyctl-actions@master
