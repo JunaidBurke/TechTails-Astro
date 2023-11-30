@@ -25,7 +25,7 @@ jobs:
       #   run: curl -L https://fly.io/install.sh | sh
 
       - name: Setup flyctl
-        uses: superfly/flyctl-actions@master
+        uses: superfly/flyctl-actions/setup-flyctl@master
 
       - name: Run deploy script
         run: flyctl deploy --remote-only
