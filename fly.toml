@@ -21,6 +21,7 @@ primary_region = "ewr"
   source="db"
   destination="/mnt/db"
 
+
 [[vm]]
   cpu_kind = "shared"
   cpus = 1
